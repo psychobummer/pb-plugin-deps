@@ -19,5 +19,11 @@ the consuming repository pins every archive by SHA-256 and by tree hash.
 | `signalsmith-stretch-1.3.2.tar.gz` | https://github.com/Signalsmith-Audio/signalsmith-stretch (v1.3.2) | `88061fd4eda56a2353c5d65c74aa3f4ccf76f9da` | MIT (`signalsmith-stretch/LICENSE.txt`) | `signalsmith-stretch/signalsmith-stretch.h` |
 | same archive | https://github.com/Signalsmith-Audio/linear (tag 0.6.6, the tag Stretch pins) | `7bb1c8f36794d6980080ce817c91f8da8fe56a66` | MIT (`signalsmith-linear/LICENSE.txt`) | `signalsmith-linear/stft.h`, `fft.h`; no accelerated back ends |
 
+## Release `rex-velociloops-0.2.0`
+
+| Archive | Upstream | Commit | Licence | Contents |
+| --- | --- | --- | --- | --- |
+| `velociloops-0.2.0.tar.gz` | https://github.com/kunitoki/VelociLoops (the file calls itself 0.2.0; no upstream tag) | `f77609ec70b7bb6db362ba97030bd9703539fa01` | Unlicense, public domain (`LICENSE`); `src/fft8g.h` is Takuya Ooura's FFT as VelociLoops ships it, with no notice in the file | `include/velociloops.h`, `src/velociloops.cpp`, `src/fft8g.h`, `docs/format.md`, `README.md`; no tests, test loops, demo, fuzzing or images |
+
 Each archive has one root directory named after the archive. Nothing in the
 files is changed from upstream; only whole files and directories are left out.
